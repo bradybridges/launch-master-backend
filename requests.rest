@@ -1,0 +1,11 @@
+GET http://localhost:3000/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYnJhZHkiLCJpYXQiOjE2MDAwNDgzOTUsImV4cCI6MTYwMDA0ODQxMH0.D4sS-PcqHsvTSle3UMdrpu1I8gxDwT6MDLh0nCB9E6k
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "brady",
+  "password": "password"
+}
