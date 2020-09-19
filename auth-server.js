@@ -15,6 +15,10 @@ app.use(express.json());
 
 app.set("port", process.env.PORT || 3000);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to Launch Master API");
+});
+
 app.get("/test", authenticateToken, (req, res) => {
   if (!req.user)
     return res
